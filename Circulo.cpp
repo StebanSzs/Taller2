@@ -1,11 +1,11 @@
 #include "Circulo.h"
-#include <stdexcept>
+using namespace std;
 
 static const double PI = 3.14159265358979323846;
 
 Circulo::Circulo(double radio) : Figura("Circulo"), radio(radio) {
     if (radio <= 0) {
-        throw std::invalid_argument("El radio del circulo debe ser mayor que cero.");
+        throw "El radio del circulo debe ser mayor que cero.";
     }
 }
 

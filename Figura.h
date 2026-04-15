@@ -3,17 +3,17 @@
 
 #include <string>
 
+using namespace std;
+
 class Figura {
 protected:
-    std::string nombre;
+    string nombre;
 
 public:
     explicit Figura(const std::string& nombre);
     virtual double calcularArea() const = 0;
-    std::string obtenerNombre() const;
+    string obtenerNombre() const;
     virtual ~Figura();
 };
-
-bool operator>(const Figura& izquierda, const Figura& derecha);
 
 #endif
