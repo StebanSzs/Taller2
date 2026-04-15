@@ -12,5 +12,4 @@ public:
     Rectangulo(double base, double altura);
     double calcularArea() const override;
 };
-
 #endif
