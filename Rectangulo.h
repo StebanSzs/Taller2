@@ -3,11 +3,14 @@
 
 #include "Figura.h"
 
-class Rectangulo: public Figura{
-	private:
-		double base;
-		double altura;
-	public:
-		Rectangulo(double base, double altura);
-		double calcularArea() const;
+class Rectangulo : public Figura {
+private:
+    double base;
+    double altura;
+
+public:
+    Rectangulo(double base, double altura);
+    double calcularArea() const override;
 };
+
+#endif

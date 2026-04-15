@@ -1,11 +1,13 @@
 #include "Figura.h"
-#include <string>
 
-Figura::Figura(string nombre){
-	this->nombre = nombre;
+Figura::Figura(const std::string& nombre) : nombre(nombre) {}
+
+std::string Figura::obtenerNombre() const {
+    return nombre;
 }
 
-double Figura::calcularArea(){
-	cout<<"Usando metodo abstracto de Figura"<<endl;
-	return 0;
+Figura::~Figura() {}
+
+bool operator>(const Figura& izquierda, const Figura& derecha) {
+    return izquierda.calcularArea() > derecha.calcularArea();
 }
