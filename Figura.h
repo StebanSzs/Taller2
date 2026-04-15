@@ -2,14 +2,18 @@
 #define FIGURA_H
 
 #include <string>
-using namespace std;
 
 class Figura {
-	protected:
-		string nombre;
-	public:
-		Figura(string nombre);
-		virtual double calcularArea() const = 0;
-		virtual ~Figura();	
+protected:
+    std::string nombre;
+
+public:
+    explicit Figura(const std::string& nombre);
+    virtual double calcularArea() const = 0;
+    std::string obtenerNombre() const;
+    virtual ~Figura();
 };
+
+bool operator>(const Figura& izquierda, const Figura& derecha);
+
 #endif
