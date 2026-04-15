@@ -10,7 +10,7 @@ protected:
     string nombre;
 
 public:
-    explicit Figura(const std::string& nombre);
+    Figura(const string& nombre);
     virtual double calcularArea() const = 0;
     string obtenerNombre() const;
     virtual ~Figura();

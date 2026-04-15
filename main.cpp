@@ -1,5 +1,4 @@
 #include <iostream>
-#include <iomanip>
 #include <string>
 #include "Rectangulo.h"
 #include "Circulo.h"
